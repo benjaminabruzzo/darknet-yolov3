@@ -29,7 +29,8 @@ Setting GPU=0 and OPENCV=0 turns off the build to ignore opencv and cuda/gpu pro
 
 
 If everthing went well, you should be able to generate a report using `nvidia-smi` from the command line.  Mine looks like this:
-	+-----------------------------------------------------------------------------+
+
+	+-----------------------------------------------------------------------------+  
 	| NVIDIA-SMI 410.79       Driver Version: 410.79       CUDA Version: 10.0     |
 	|-------------------------------+----------------------+----------------------+
 	| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
