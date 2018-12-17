@@ -1,12 +1,12 @@
-# USMA Install #
+# Download source #
 `mkdir ~/darknet && cd ~/darknet && git init`
 
-`git remote add gh git@github.com:westpoint-robotics/darknet-yolov3.git && git pull gh master && make`
-
-For help with the installation, see the darknet install page: [Darknet install page](https://pjreddie.com/darknet/install/).
+`git remote add gh git@github.com:westpoint-robotics/darknet-yolov3.git && git pull gh master `
 
 # CUDA #
-If you want to run darknet-yolov3 with cuda, follow the instructions here: [install_cuda.sh](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/install_cuda.sh), also in the scripts folder.  (NOTE: this is a guide file in shell script format, it is not meant to be run as a single terminal command.)
+If you want to run darknet-yolov3 without CUDA, skip this section.  You will need to change the makefile to `GPU=0` to suppress checking for cuda.
+
+To install CUDA follow the instructions here: [install_cuda.sh](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/install_cuda.sh), also in the scripts folder.  (NOTE: this is a guide file in shell script format, it is not meant to be run as a single terminal command.)
 
 There are five make options in ~/darknet/Makefile :
 
@@ -26,6 +26,13 @@ Setting GPU=0 and OPENCV=0 turns off the build to ignore opencv and cuda/gpu pro
 
 `# This is what I use, uncomment if you know your arch and want to specify`  
 `ARCH= -gencode arch=compute_50,code=sm_50`  
+
+
+# USMA Install #
+
+`cd ~/darknet && make`
+
+For help with the installation, see the darknet install page: [Darknet install page](https://pjreddie.com/darknet/install/).
 
 
 # Usage:
