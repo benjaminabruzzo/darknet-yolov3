@@ -1,5 +1,5 @@
 # Download source #
-NOTE: This assumes you already have ROS kinetic installed.
+NOTE: This assumes you already have ROS Kinetic installed on Ubuntu 16.04.
 
 	mkdir ~/darknet && cd ~/darknet && git init
 	git remote add gh git@github.com:westpoint-robotics/darknet-yolov3.git && git pull gh master
