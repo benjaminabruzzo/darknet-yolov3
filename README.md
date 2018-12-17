@@ -28,7 +28,7 @@ Setting GPU=0 and OPENCV=0 turns off the build to ignore opencv and cuda/gpu pro
 `ARCH= -gencode arch=compute_50,code=sm_50`  
 
 
-# USMA Install #
+# Install #
 
 `cd ~/darknet && make`
 
