@@ -52,11 +52,11 @@ If everthing went well, you should be able to generate a report using `nvidia-sm
 
 
 
-# Install #
+# Make #
 
 `cd ~/darknet && make`
 
-For help with the installation, see the darknet install page: [Darknet install page](https://pjreddie.com/darknet/install/).
+If there are issues or for further help with the installation, see the darknet install page: [Darknet install page](https://pjreddie.com/darknet/install/).
 
 
 # Usage:
