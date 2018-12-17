@@ -1,7 +1,9 @@
 # Download source #
-`mkdir ~/darknet && cd ~/darknet && git init`
+NOTE: This assumes you already have ROS kinetic installed.
 
-`git remote add gh git@github.com:westpoint-robotics/darknet-yolov3.git && git pull gh master `
+	mkdir ~/darknet && cd ~/darknet && git init
+
+	git remote add gh git@github.com:westpoint-robotics/darknet-yolov3.git && git pull gh master
 
 # CUDA #
 If you want to run darknet-yolov3 without CUDA, skip this section.  You will need to change the makefile to `GPU=0` to suppress checking for cuda.
