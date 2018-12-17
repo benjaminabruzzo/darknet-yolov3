@@ -2,7 +2,6 @@
 NOTE: This assumes you already have ROS kinetic installed.
 
 	mkdir ~/darknet && cd ~/darknet && git init
-
 	git remote add gh git@github.com:westpoint-robotics/darknet-yolov3.git && git pull gh master
 
 # CUDA #
