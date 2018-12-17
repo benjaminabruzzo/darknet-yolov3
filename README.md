@@ -16,7 +16,7 @@ There are five make options in ~/darknet/Makefile :
 'OPENMP=0'
 'DEBUG=0'
 
-Setting GPU=0 and OPENCV=0 turns off the build to ignore opencv and cuda/gpu processing.
+Setting GPU=0 and OPENCV=0 turns off the build to ignore opencv and cuda/gpu processing.  This installationg assumes ROS kinetic is already installed, which has opencv bundled.
 
 '#ARCH= -gencode arch=compute_30,code=sm_30 \ '
 '#-gencode arch=compute_35,code=sm_35 \  '
