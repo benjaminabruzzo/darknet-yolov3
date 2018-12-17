@@ -2,13 +2,13 @@
 mkdir ~/darknet && cd ~/darknet && git init
 git remote add gh git@github.com:westpoint-robotics/darknet-yolov3.git && git pull gh master && make
 
-If you want to run darknet-yolov3 with cuda, follow the instrucitons [here](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/install_cuda.sh), also in the scripts folder.  (NOTE: this is a guide file in shell script format, it is not meant to be run as a single terminal command.)
+If you want to run darknet-yolov3 with cuda, follow the instructions here: [install_cuda.sh](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/install_cuda.sh), also in the scripts folder.  (NOTE: this is a guide file in shell script format, it is not meant to be run as a single terminal command.)
 
 For help with the installation, see the darknet install page: [Darknet install page](https://pjreddie.com/darknet/install/).
 
 
 # Usage:
-usage: ./darknet <function>
+./darknet <function>
 
 Examples can be foun in the scripts folder, following the [test_darknet.sh](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/test_darknet.sh) file.
 
