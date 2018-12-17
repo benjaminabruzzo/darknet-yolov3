@@ -38,7 +38,7 @@ For help with the installation, see the darknet install page: [Darknet install p
 # Usage:
 ./darknet <function>
 
-Examples can be foun in the scripts folder, following the [test_darknet.sh](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/test_darknet.sh) file.
+Examples can be found in the scripts folder, following the [test_darknet.sh](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/test_darknet.sh) file.
 
 
 
