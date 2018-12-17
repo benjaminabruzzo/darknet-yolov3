@@ -10,14 +10,16 @@ To install CUDA follow the instructions here: [install_cuda.sh](https://github.c
 
 There are five make options in ~/darknet/Makefile :
 
-`GPU=1`  
-`CUDNN=0`  
-`OPENCV=1`  
-`OPENMP=0`  
-`DEBUG=0`  
+	GPU=1
+	CUDNN=0
+	OPENCV=1
+	OPENMP=0
+	DEBUG=0  
 
 Setting GPU=0 and OPENCV=0 turns off the build to ignore opencv and cuda/gpu processing.  This installationg assumes ROS kinetic is already installed, which has opencv bundled.
 
+
+	# Test
 `#ARCH= -gencode arch=compute_30,code=sm_30 \ `  
 `#-gencode arch=compute_35,code=sm_35 \  `  
 `#-gencode arch=compute_50,code=[sm_50,compute_50] \`  
