@@ -9,6 +9,8 @@ If you want to run darknet-yolov3 without CUDA, skip this section.  You will nee
 
 To install CUDA follow the instructions here: [install_cuda.sh](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/install_cuda.sh), also in the scripts folder.  (NOTE: this is a guide file in shell script format, it is not meant to be run as a single terminal command.)
 
+[match your gencode](https://www.myzhar.com/blog/tutorials/tutorial-nvidia-gpu-cuda-compute-capability/)
+
 There are five make options in ~/darknet/Makefile :
 
 	GPU=1
