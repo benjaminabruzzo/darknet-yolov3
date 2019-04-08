@@ -56,7 +56,7 @@ If everthing went well, you should be able to generate a report using `nvidia-sm
 
 # Make #
 
-`cd ~/darknet && make`
+`cd ~/darknet && make 2>&1 | tee make_log.out`
 
 If there are issues or for further help with the installation, see the darknet install page: [Darknet install page](https://pjreddie.com/darknet/install/).
 
