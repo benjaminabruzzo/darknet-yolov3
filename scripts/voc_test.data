@@ -1,6 +1,0 @@
-classes= 20
-train = /home/benjamin/datasets/voc_test/train.txt
-valid = /home/benjamin/datasets/voc_test/2007_test.txt
-names = /home/benjamin/darknet/scripts/voc_test.names
-backup = /home/benjamin/darknet/backup
-

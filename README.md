@@ -1,9 +1,8 @@
 # Download source #
 NOTE: This assumes you already have ROS Kinetic installed on Ubuntu 16.04.
 
-	mkdir ~/darknet && cd ~/darknet && git init
-	git remote add gh git@github.com:westpoint-robotics/darknet-yolov3.git && git pull gh master
-
+	cd ~/ && git clone git@github.com:pjreddie/darknet.git
+		
 # CUDA #
 If you want to run darknet-yolov3 without CUDA, skip this section.  You will need to change the makefile to `GPU=0` to suppress checking for cuda.
 
@@ -14,12 +13,14 @@ To install CUDA follow the instructions here: [install_cuda.sh](https://github.c
 There are five make options in ~/darknet/Makefile :
 
 	GPU=1
-	CUDNN=0
+	CUDNN=1
 	OPENCV=1
 	OPENMP=0
 	DEBUG=0  
 
+
 Setting GPU=0 and OPENCV=0 turns off the build to ignore opencv and cuda/gpu processing.  This installation assumes ROS kinetic is already installed, which has opencv bundled.  To find the ROS ported version of dakrnet, see [this repo](https://github.com/westpoint-robotics/darknet-yolov3-ros)
+
 
 	#ARCH= -gencode arch=compute_30,code=sm_30 \ 
 	#-gencode arch=compute_35,code=sm_35 \  
@@ -29,6 +30,9 @@ Setting GPU=0 and OPENCV=0 turns off the build to ignore opencv and cuda/gpu pro
 
 	# This is what I use for my Quadro M2000 video card
 	ARCH= -gencode arch=compute_50,code=sm_50
+
+	# This is what I use for my P4000 video card
+	ARCH= -gencode arch=compute_61,code=sm_61
 
 
 If everthing went well, you should be able to generate a report using `nvidia-smi` from the command line.  Mine looks like this:
@@ -66,6 +70,10 @@ If there are issues or for further help with the installation, see the darknet i
 
 Examples can be found in the scripts folder, following the [test_darknet.sh](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/test_darknet.sh) file.
 
+test opencv: 
+
+`./darknet imtest data/eagle.jpg`
+
 
 
 # Darknet #
@@ -76,4 +84,3 @@ For more information see the [Darknet project website](http://pjreddie.com/darkn
 For questions or issues please use the [Google Group](https://groups.google.com/forum/#!forum/darknet).
 
 ![Darknet Logo](http://pjreddie.com/media/files/darknet-black-small.png)
-
