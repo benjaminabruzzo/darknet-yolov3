@@ -35,7 +35,7 @@ Setting GPU=0 and OPENCV=0 turns off the build to ignore opencv and cuda/gpu pro
 	ARCH= -gencode arch=compute_61,code=sm_61
 
 
-If everthing went well, you should be able to generate a report using `nvidia-smi` from the command line.  Mine looks like this:
+If everything went well, you should be able to generate a report using `nvidia-smi` from the command line.  Mine looks like this:
 
 	+-----------------------------------------------------------------------------+  
 	| NVIDIA-SMI 410.79       Driver Version: 410.79       CUDA Version: 10.0     |
@@ -65,7 +65,7 @@ If everthing went well, you should be able to generate a report using `nvidia-sm
 If there are issues or for further help with the installation, see the darknet install page: [Darknet install page](https://pjreddie.com/darknet/install/).
 
 
-# Usage:
+# Usage: #
 ./darknet <function>
 
 Examples can be found in the scripts folder, following the [test_darknet.sh](https://github.com/westpoint-robotics/darknet-yolov3/blob/master/scripts/test_darknet.sh) file.
@@ -74,6 +74,15 @@ test opencv:
 
 `./darknet imtest data/eagle.jpg`
 
+## Python library: #
+
+Change the following line in ~/darknet/python/darknet.py:
+
+	lib = CDLL("libdarknet.so", RTLD_GLOBAL)
+
+to
+
+	lib = CDLL("/home/you/darknet/libdarknet.so", RTLD_GLOBAL)
 
 
 # Darknet #
